@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        maven {
+            url 'https://plugins.gradle.org/m2/'
+        }
+    }
+}
+
+allprojects {
+    group = 'aoc-puzzle'
+    version = "${version}"
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'eclipse'
+
+    dependencies {
+        compile "org.projectlombok:lombok:${LOMBOK_VERSION}",
+                "junit:junit:${JUNIT_VERSION}",
+                "org.assertj:assertj-core:${ASSERTJ_VERSION}"
+    }
+
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.7'
+}

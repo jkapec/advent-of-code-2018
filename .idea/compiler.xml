@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="1024" />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aoc-puzzle.aoc2018.main" target="1.9" />
+      <module name="aoc-puzzle.aoc2018.test" target="1.9" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
